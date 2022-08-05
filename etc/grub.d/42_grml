@@ -106,10 +106,10 @@ for grmliso in $iso_list ; do
     ;;
   esac
 
-  echo "Found Grml ISO image: $grmliso" >&2
-  title="Grml Rescue System ($grml)"
+  echo "Found ISO image: $grmliso" >&2
+  title="System ($grml)"
   grub_prep=$(prepare_grub_to_access_device "$device" | sed -e "s/^/        /")
-  
+
 if [ "$grml" = "gparted-live-1.4.0-1-amd64.iso" ];  then
 cat << EOF
 menuentry "${title}" {
@@ -147,10 +147,10 @@ ${grub_prep}
         iso_path="${rel_dirname%/}/${grml}"
         export iso_path
         rmmod tpm
-        configfile /grml/pcwrescue_loop.cfg
+        configfile /grml/lwrescue_loop.cfg
 }
 EOF
-else  
+else
   cat << EOF
 menuentry "${title}" {
 ${grub_prep}
