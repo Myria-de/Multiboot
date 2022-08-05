@@ -36,10 +36,8 @@ Das Script „42_grml“ lässt sich aber dafür anpassen. Die relevanten Zeilen
 
 Erstellen Sie ein Backup der originalen Datei „/etc/grub.d/42_grml“. Ersetzen Sie das Original mit der Datei „grub.d/42_grml“ aus dem Download.
 
-Die neue Datei enthält ab Zeile 113 bedingte Verzweigungen für Gparted Live 1.4.0-1, Ubuntu 22.04, System Rescue-9.02 und das LinuxWelt-Rettungssystem 8.43. Die angegebenen/gewünschten ISO-Dateien müssen im Ordner „/grml“ liegen beziehungsweise in dem Ordener, den Sie in der Datei „/etc/default/grml-rescueboot“ angegeben haben. Passen Sie die Bezeichnungen der ISO-Dateien  bei Bedarf an.
+Die neue Datei enthält ab Zeile 113 bedingte Verzweigungen für Gparted Live 1.4.0-1, Ubuntu 22.04, System Rescue-9.02 und das LinuxWelt-Rettungssystem 8.43. Die angegebenen/gewünschten ISO-Dateien und die Konfigurationsdateien müssen im Ordner „/grml“ liegen beziehungsweise in dem Ordener, den Sie in der Datei „/etc/default/grml-rescueboot“ angegeben haben. Passen Sie die Bezeichnungen der ISO-Dateien und Pfade bei Bedarf an.
 
 Den inhalt des Orders „grml“ aus dem Download kopieren Sie nach „/grml“ auf der Festplatte. Die Bezeichnungen der cfg-Dateien für das jeweilige System sind in der Datei „/etc/grub.d/42_grml“ festgelegt. Der Inhalt gilt für das jeweils zugehötige System. Für andere Live-Systeme müssen Sie die Parameter anpassen.
-
-
 
 ![](https://github.com/Myria-de/Multiboot/raw/main/GRML.png?raw=true)
