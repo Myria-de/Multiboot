@@ -1,6 +1,6 @@
 # Multiboot mit ISO-Dateien
 
-ISO-Dateien lassen sich in das Grub-Menü des installierten Systems einbauen. Das ist nützlich, wenn Sie beispielsweise ein Livesystem regelmäßig als sicheres Surfsystem verwenden oder Rescuezilla (siehe ab Seite [[203]]) für Backups starten.
+ISO-Dateien lassen sich in das Grub-Menü des installierten Systems einbauen. Das ist nützlich, wenn Sie beispielsweise ein Livesystem regelmäßig als sicheres Surfsystem verwenden oder Rescuezilla für Backups starten.
 
 **Schritt 1:** Installieren Sie unter Ubuntu 20.04, 22.04 oder Linux Mint 20 das Paket „grml-rescueboot“, im Terminal mit
 ```
