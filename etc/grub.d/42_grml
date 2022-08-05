@@ -109,11 +109,7 @@ for grmliso in $iso_list ; do
   echo "Found Grml ISO image: $grmliso" >&2
   title="Grml Rescue System ($grml)"
   grub_prep=$(prepare_grub_to_access_device "$device" | sed -e "s/^/        /")
-  ISOFILE="systemrescue-9.02-amd64.iso"
-#  if [ "$grml" = "systemrescue-9.02-amd64.iso" ]; then
-#  echo "EQUAL" >&2
-#  fi
-
+  
 if [ "$grml" = "gparted-live-1.4.0-1-amd64.iso" ];  then
 cat << EOF
 menuentry "${title}" {
