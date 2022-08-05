@@ -140,27 +140,7 @@ ${grub_prep}
         configfile /grml/sysresc_loop.cfg
 }
 EOF
-elif [ "$grml" = "rettungssystem_842.iso" ]; then
-  cat << EOF
-menuentry "${title}" {
-${grub_prep}
-        iso_path="${rel_dirname%/}/${grml}"
-        export iso_path
-        rmmod tpm
-        configfile /grml/lwrescue_loop.cfg
-}
-EOF
 elif [ "$grml" = "rettungssystem_843.iso" ]; then
-  cat << EOF
-menuentry "${title}" {
-${grub_prep}
-        iso_path="${rel_dirname%/}/${grml}"
-        export iso_path
-        rmmod tpm
-        configfile /grml/pcwrescue_loop.cfg
-}
-EOF
-elif [ "$grml" = "pcw_rettungssystem_dvd_843.iso" ]; then
   cat << EOF
 menuentry "${title}" {
 ${grub_prep}
